@@ -1,4 +1,4 @@
-# 🫧 Logica e Linguagem em Java
+# 🫧 Lógica e Linguagem em Java
 ## 📌 Exercícios a serem praticados
 - [ ] Operação de Decisão
 - [ ] Interação fechada
