@@ -30,24 +30,24 @@ public class Exercicio3 {
                 + "\nDigite o valor do coeficiente c:");
         double c = Float.parseFloat(resposta);
 
-        String m = "";
+        String mensagem = "";
         if (!(a == 0)) { // Verifica se é ou não equação de segundo grau
             double delta, x_1, x_2, raiz;
-            delta = Math.pow(b, 2) - (4 * a * c);
+            delta = (float) Math.pow(b, 2) - (4 * a * c);
             raiz = Math.sqrt(delta);
             x_1 = (-(b) + raiz) / (2 * a);
             x_2 = (-(b) - raiz) / (2 * a);
 
             if ((x_1 != 0) && (x_2 != 0)) {
-                m = "A equação possui 2 raízes " + "\nx' = " + x_1 + "\nx'' = " + x_2;
+                mensagem = "A equação possui 2 raízes " + "\nx' = " + x_1 + "\nx'' = " + x_2;
             } else if ((x_1 != 0) && (x_2 == 0)) {
-                m = "A equação possui 1 raíz " + "\nx' = " + x_1 + "\nx'' = " + x_2;
+                mensagem = "A equação possui 1 raíz " + "\nx' = " + x_1 + "\nx'' = " + x_2;
             } else if ((x_1 == 0) && (x_2 != 0)) {
-                m = "A equação possui 1 raízes " + "\nx' = " + x_1 + "\nx'' = " + x_2;
+                mensagem = "A equação possui 1 raízes " + "\nx' = " + x_1 + "\nx'' = " + x_2;
             } else {
-                m = "A equação não possui raízes ";
+                mensagem = "A equação não possui raízes ";
             }
         }
-        JOptionPane.showMessageDialog(null, m);
+        JOptionPane.showMessageDialog(null, mensagem);
     }
 }
