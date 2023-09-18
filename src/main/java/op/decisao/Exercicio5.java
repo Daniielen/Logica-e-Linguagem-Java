@@ -16,11 +16,12 @@ import javax.swing.*;
  * classificada como "Suspeita", entre três e quatro como "Cúmplice" e cinco como
  * "Assassino". Caso contrário, ele será classificado como "Inocente"
  * @note Prática: Operação de Decisão na linguagem Java.
- * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA.
+ * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA - campus Camaçari.
  * @since 17/09/2023
  */
 public class Exercicio5 {
     public static void main(String[] args) {
+        // { ♥ } - Entrada de dados
         String a,b,c,d,e;
         a = JOptionPane.showInputDialog("\tResponda as perguntas a seguir"
                     + "\na. Telefonou para a vitima?"
@@ -53,6 +54,8 @@ public class Exercicio5 {
                 + "\n\nc. Esteve no local do crime?\nR: " + c
                 + "\n\nd. Mora perto da vítima?\nR: " + d
                 + "\n\ne. Já trabalhou com a vítima?");
+
+        // { ... } - Processamento
         int classifica = 0;
         if (a.equalsIgnoreCase("sim")) {
             classifica += 1;
@@ -105,6 +108,8 @@ public class Exercicio5 {
                     + "\n\ne. Já trabalhou com a vítima?\nR: " + e
                     + "\n\n\tClassificação: INOCENTE.";
         }
+
+        // <(^-^♥)> - Resultado
         JOptionPane.showMessageDialog(null, mensagem);
     }
 }

@@ -7,7 +7,7 @@ import javax.swing.*;
  * @details Dados os nomes e as idades de três pessoas,
  * selecionar (mostrar) nome e idade do mais jovem caso as idades sejam positivas e diferentes entre si.
  * @note Prática: Operação de Decisão na linguagem Java.
- * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA.
+ * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA - campus Camaçari.
  * @since 15/09/2023
  */
 
@@ -30,7 +30,7 @@ public class Exercicio2 {
         resposta = JOptionPane.showInputDialog("2) Idade: ");
         idade_2 = Integer.parseInt(resposta);
 
-        String mensagem = "";
+        String mensagem;
 
         // {...} -  Processamento
         if (!((idade_0 == idade_1) && (idade_0 == idade_2) && (idade_1 == idade_2))) {

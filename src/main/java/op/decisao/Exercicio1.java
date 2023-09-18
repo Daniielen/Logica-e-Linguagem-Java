@@ -14,16 +14,21 @@ import javax.swing.*;
  * | Acima de 64 |        Idoso        |
  * -------------------------------------
  * @note Prática: Operação de Decisão na linguagem Java.
- * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA.
+ * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA - campus Camaçari.
  * @since 15/09/2023
  */
 
 public class Exercicio1 {
     public static void main(String[] args) {
+
+        // { ♥ } - Entrada de Dados
         String resposta = JOptionPane.showInputDialog("Classificação de período de vida"
                 + "\nInforme a idade: ");
         int idade = Integer.parseInt(resposta);
-        String mensagem;
+
+        // { ... } - Processamento
+        String mensagem = "";
+
         if (!(idade <= -1)) {
             if (idade <= 9) {
                 mensagem = "Período de vida: Infância";
@@ -40,6 +45,7 @@ public class Exercicio1 {
             mensagem = "Erro: Não é válido valores negativos.";
         }
 
+        // <(^-^♥)> - Resultado
         JOptionPane.showMessageDialog(null, mensagem);
 
     }

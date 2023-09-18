@@ -1,7 +1,5 @@
 package op.decisao;
 
-import com.sun.jdi.Value;
-
 import javax.swing.*;
 
 /**
@@ -11,12 +9,13 @@ import javax.swing.*;
  * equação do segundo grau. Em caso afirmativo deve-se informar quantas raízes a
  * equação possui e seus respectivos valores.
  * @note Prática: Operação de Decisão na linguagem Java.
- * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA.
+ * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA - campus Camaçari.
  * @since 17/09/2023
  */
 
 public class Exercicio3 {
     public static void main(String[] args) {
+        // { ♥ } - Entrada de Dados
         String resposta;
         resposta = JOptionPane.showInputDialog(null, "\t" + "Equação do Segundo Grau"
                 + "\nDigite o valor do coeficiente a:");
@@ -30,6 +29,7 @@ public class Exercicio3 {
                 + "\nDigite o valor do coeficiente c:");
         double c = Float.parseFloat(resposta);
 
+        // { ... } - Processamento
         String mensagem = "";
         if (!(a == 0)) { // Verifica se é ou não equação de segundo grau
             double delta, x_1, x_2, raiz;
@@ -40,14 +40,16 @@ public class Exercicio3 {
 
             if ((x_1 != 0) && (x_2 != 0)) {
                 mensagem = "A equação possui 2 raízes " + "\nx' = " + x_1 + "\nx'' = " + x_2;
-            } else if ((x_1 != 0) && (x_2 == 0)) {
+            } else if (x_1 != 0) {
                 mensagem = "A equação possui 1 raíz " + "\nx' = " + x_1 + "\nx'' = " + x_2;
-            } else if ((x_1 == 0) && (x_2 != 0)) {
+            } else if (x_2 != 0) {
                 mensagem = "A equação possui 1 raízes " + "\nx' = " + x_1 + "\nx'' = " + x_2;
             } else {
                 mensagem = "A equação não possui raízes ";
             }
         }
+
+        // <(^-^♥)> - Resultado
         JOptionPane.showMessageDialog(null, mensagem);
     }
 }

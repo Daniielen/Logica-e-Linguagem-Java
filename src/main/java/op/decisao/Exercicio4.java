@@ -10,11 +10,13 @@ import javax.swing.*;
  * 7,0 e o limite de faltas é 25% do total de aulas ministradas. A reprovação por falta
  * ocorrerá mesmo que o estudante tenha média suficiente para aprovação.
  * @note Prática: Operação de Decisão na linguagem Java.
- * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA.
+ * Exercício criado pelo Prof Dr.Josildo Silva para o curso em Lógica e Linguagem de Programação pelo IFBA - campus Camaçari.
  * @since 17/09/2023
  */
 public class Exercicio4 {
     public static void main(String[] args){
+
+        // { ♥ } - Entrada de Dados
         float nota_0, nota_1, nota_2;
         int aulas_ministradas, qtd_faltas;
 
@@ -40,6 +42,7 @@ public class Exercicio4 {
                 + "\nNúmero de faltas: ");
         qtd_faltas = Integer.parseInt(resposta);
 
+        // { ... } - Processamento
         float media;
         media = (nota_0 + nota_1 + nota_2) / 3;
 
@@ -52,6 +55,8 @@ public class Exercicio4 {
         } else if (((media >= 7) && (porcentagem > 25.0)) || ((media < 7) && (porcentagem < 25.0))) {
             mensagem = "Situação: Reprovado" + "\t\nDetalhamento\nMédia final: " + media + "\nPorcentagem de faltas: " + porcentagem;;
         }
+
+        // <(^-^♥)> - Resultado
         JOptionPane.showMessageDialog(null, mensagem);
     }
 }
